@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.com.gtservice" >
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme" >
+        <activity android:name="app.com.gtservice.Drawer"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+        <activity
+            android:name=".ActivityCandidato"
+            android:label="@string/title_activity_candidato"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".CandidatoDetalle"
+            android:label="@string/title_activity_candidato_detalle"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".LauncherActivity"
+            android:label="@string/title_activity_launcher"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ActivityEducacion"
+            android:label="@string/title_activity_estudios"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".EstudioDetalle"
+            android:label="@string/title_activity_estudios_detalle"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ReporteDetalle"
+            android:label="@string/title_activity_reporte_detalle">
+        </activity>
+        <activity
+            android:name=".ActivityReporteG"
+            android:label="@string/title_activity_activity_reporte" >
+        </activity>
+        <activity android:name=".ActivityReclutador"
+            android:label="@string/title_activity_reclutadores">
+        </activity>
+        <activity
+            android:name=".ReclutadorDetalle"
+            android:label="@string/title_activity_reclutadores_detalle">
+        </activity>
+        <activity
+            android:name=".ActivityInicioSesion"
+            android:label="@string/title_activity_inicio_sesion">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityEmpresa"
+            android:label="@string/title_activity_reclutadores_detalle">
+        </activity>
+        <activity
+            android:name=".EmpresaDetalle"
+            android:label="@string/title_activity_reclutadores_detalle">
+        </activity>
+    </application>
+
+</manifest>
