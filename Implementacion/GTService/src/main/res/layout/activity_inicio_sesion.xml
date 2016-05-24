@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="app.com.gtservice.ActivityInicioSesion">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/view">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo_loading"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textUsuario" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nombre de Usuario:"
+        android:id="@+id/textUsuario"
+        android:layout_gravity="center"
+        android:layout_above="@+id/editUsuario"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Ingresa aquí tu usuario."
+        android:ems="10"
+        android:id="@+id/editUsuario"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textUsuario"
+        android:layout_alignStart="@+id/textUsuario" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Contraseña:"
+        android:id="@+id/textPassword"
+        android:layout_gravity="center"
+        android:layout_above="@+id/editPassword"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Ingresa aquí"
+        android:ems="10"
+        android:id="@+id/editPassword"
+        android:layout_gravity="center"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/btnIngresar"
+        android:layout_alignLeft="@+id/editUsuario"
+        android:layout_alignStart="@+id/editUsuario"
+        android:layout_alignRight="@+id/editUsuario"
+        android:layout_alignEnd="@+id/editUsuario" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:id="@+id/btnIngresar"
+        android:onClick="onButtonClick"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/txtError"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/btnIngresar" />
+
+</RelativeLayout>
