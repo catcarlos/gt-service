@@ -190,7 +190,7 @@ public class CandidatoABC {
                 candidato.parentesco= cursor.getString(cursor.getColumnIndex(Candidato.KEY_Parentesco  ));
             } while (cursor.moveToNext());
         }
-.
+
         cursor.close();
         db.close();
         return candidato;
