@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="parentesco_spinner">
+        <item>PADRE</item>
+        <item>MADRE</item>
+        <item>HERMANO(A)</item>
+        <item>HIJO(A)</item>
+        <item>FAMILIAR CERCANO(A)</item>
+        <item>FAMILIAR LEJANO(A)</item>
+        <item>AMIGO(A)</item>
+        <item>OTRO(A)</item>
+    </string-array>
+
+    <string-array name="sexo_spinner">
+        <item>M</item>
+        <item>F</item>
+    </string-array>
+
+    <string-array name="grado_estudio">
+        <item>SECUNDARIA</item>
+        <item>PREPARATORIA</item>
+        <item>UNIVERSIDAD</item>
+        <item>POSGRADO</item>
+        <item>OTRO</item>
+    </string-array>
+
+
+</resources>

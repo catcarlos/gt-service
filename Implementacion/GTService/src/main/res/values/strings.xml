@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">GTService</string>
+    <string name="title_activity_inicio_sesion">Wanted Work</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">WantedWork</string>
+    <string name="title_activity_launcher">Wanted Work</string>
+    <string name="title_activity_candidato">Candidatos</string>
+    <string name="title_activity_candidato_detalle">Información Personal</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="title_activity_estudios">Nivel de Educacioón</string>
+    <string name="title_activity_estudios_detalle">Detalle de educación</string>
+    <string name="large_text">X</string>
+    <string name="navigation_drawer_open">Cerrar menu</string>
+    <string name="navigation_drawer_close">Abrir menu</string>
+    <string name="title_activity_drawer">Wanted Work</string>
+    <string name="title_activity_reporte">Reporte de Candidato</string>
+    <string name="title_action_bar_main">Wanted Work</string>
+    <string name="title_activity_activity_reporte">Grafica de Barras</string>
+    <string name="title_activity_reporte_detalle">Parametros para Reporte</string>
+    <string name="title_activity_reclutadores">Reclutadores</string>
+    <string name="title_activity_reclutadores_detalle">Detalles del reclutador</string>
+
+</resources>
