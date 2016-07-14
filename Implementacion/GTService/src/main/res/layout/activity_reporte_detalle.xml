@@ -12,12 +12,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Reclutador"
+        android:text="Usuario"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editUsuario"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp" />
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btnClose"
+        android:layout_toStartOf="@+id/btnClose" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Empresa"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/editUsuario"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editEmpresa"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btnClose"
+        android:layout_toStartOf="@+id/btnClose" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,28 +55,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Fecha de inicio:"
         android:id="@+id/textView2"
-        android:layout_alignParentStart="true"
-        android:layout_above="@+id/editFecha"
-        android:layout_alignParentLeft="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Fecha final:"
-        android:id="@+id/textView3"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/editIdReclutador"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/editEmpresa"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -56,10 +65,22 @@
         android:ems="10"
         android:id="@+id/editFecha"
         android:hint="Presiona aquí"
-        android:layout_above="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btnSave"
+        android:layout_toStartOf="@+id/btnSave" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Fecha final:"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/editFecha"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="33dp" />
+        android:layout_marginTop="21dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -68,20 +89,14 @@
         android:id="@+id/editFecha2"
         android:hint="Presiona aquí"
         android:layout_below="@+id/textView3"
-        android:layout_toLeftOf="@+id/btnSave" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Visualizar"
-        android:id="@+id/btnSave"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/btnClose" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cerrar"
+        android:text="X"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/btnClose"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
@@ -90,10 +105,26 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eliminar"
+        android:text="Candidatos por Empresa"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/btnSave"
+        android:layout_above="@+id/btnClose"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:width="10dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Candidatos por Usuario"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/btnDelete"
         android:layout_alignTop="@+id/btnSave"
-        android:layout_toLeftOf="@+id/btnSave" />
-
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editFecha"
+        android:layout_alignEnd="@+id/editFecha" />
 
 </RelativeLayout>
